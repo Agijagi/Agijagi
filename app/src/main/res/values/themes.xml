@@ -1,8 +1,15 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Agijagi" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- 상단 핸드폰 베터리 및 시간 상태바 설정 -->
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- 상단 상태바 배경색 -->
+        <item name="android:statusBarColor">@color/transparency</item>
+        <item name="colorPrimary">@color/jagi_brown</item>
+        <!-- 바텀네비게이션 선택시 아이콘백그라운드 배경색 -->
+        <item name="colorSecondaryContainer">@color/jagi_brown</item>
     </style>
 
     <style name="Theme.Agijagi" parent="Base.Theme.Agijagi" />
