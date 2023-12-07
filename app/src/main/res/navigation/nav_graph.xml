@@ -20,4 +20,14 @@
         android:name="com.likelion.agijagi.feature.product.ProductDetailFragment"
         android:label="fragment_product_detail"
         tools:layout="@layout/fragment_product_detail" />
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.likelion.agijagi.feature.product.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.likelion.agijagi.feature.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
 </navigation>
