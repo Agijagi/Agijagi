@@ -30,4 +30,9 @@
         android:name="com.likelion.agijagi.feature.category.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/wishFragment"
+        android:name="com.likelion.agijagi.feature.wish.WishFragment"
+        android:label="fragment_wish"
+        tools:layout="@layout/fragment_wish" />
 </navigation>
