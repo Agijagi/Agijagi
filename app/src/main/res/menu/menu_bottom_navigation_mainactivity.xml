@@ -21,7 +21,7 @@
         android:title="주문/배송" />
 
     <item
-        android:id="@+id/wishListFragment"
+        android:id="@+id/wishFragment"
         android:enabled="true"
         android:icon="@drawable/favorite_24px"
         android:title="찜" />
