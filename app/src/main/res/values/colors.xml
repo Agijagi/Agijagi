@@ -24,4 +24,6 @@
     <color name="naver_login">#03C75A</color>
     <color name="kakao_login">#FEE500</color>
 
+    <color name="jagi_divider">#E4E3E2</color>
+
 </resources>
