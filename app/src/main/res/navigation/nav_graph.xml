@@ -35,4 +35,9 @@
         android:name="com.likelion.agijagi.feature.wish.WishFragment"
         android:label="fragment_wish"
         tools:layout="@layout/fragment_wish" />
+    <fragment
+        android:id="@+id/readyMadeOptionFragment"
+        android:name="com.likelion.agijagi.feature.product.ReadyMadeOptionFragment"
+        android:label="fragment_ready_made_option"
+        tools:layout="@layout/fragment_ready_made_option" />
 </navigation>
