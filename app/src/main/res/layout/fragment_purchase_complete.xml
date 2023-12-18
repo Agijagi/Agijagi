@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.payment.PurchaseCompleteFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_purchase_complete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="주문완료" />
+
+    <ScrollView
+        android:id="@+id/scrollview_purchase_complete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/button_purchase_complete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_purchase_complete">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_purchase_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="주문이 완료되었습니다."
+                android:textAppearance="@style/body_bold_18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider_purchase_complete1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="39dp"
+                app:dividerColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="48dp"
+                android:text="주문번호"
+                android:textAppearance="@style/body_bold_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider_purchase_complete1" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_order_number_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="000000000000000000000000000"
+                android:textAppearance="@style/body_regular_13"
+                app:layout_constraintBottom_toBottomOf="@id/textView_purchase_complete_order_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textView_purchase_complete_order_number"
+                app:layout_constraintTop_toTopOf="@id/textView_purchase_complete_order_number" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:text="수령인"
+                android:textAppearance="@style/body_bold_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_order_number" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_customer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="홍길동"
+                android:textAppearance="@style/body_regular_13"
+                app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_order_number_value"
+                app:layout_constraintTop_toTopOf="@id/textView_purchase_complete_customer" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_customer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="010 1111 2222"
+                android:textAppearance="@style/body_regular_13"
+                app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_order_number_value"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_customer_name" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_shipping_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="56dp"
+                android:text="배송지"
+                android:textAppearance="@style/body_bold_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_customer" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_shipping_address_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginEnd="40dp"
+                android:text="경기도 고양시 일산동구 어쩌구 저쩌구"
+                android:textAppearance="@style/body_regular_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textView_purchase_complete_shipping_address"
+                app:layout_constraintTop_toTopOf="@id/textView_purchase_complete_shipping_address" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_shipping_address_detail_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="경기도 고양시 일산동구 어쩌구 저쩌구"
+                android:textAppearance="@style/body_regular_13"
+                app:layout_constraintEnd_toEndOf="@id/textView_purchase_complete_shipping_address_value"
+                app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_shipping_address_value"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_shipping_address_value" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_shipping_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="56dp"
+                android:text="배송방법"
+                android:textAppearance="@style/body_bold_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_shipping_address" />
+
+            <TextView
+                android:id="@+id/textView_purchase_complete_shipping_method_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="택배"
+                android:textAppearance="@style/body_regular_13"
+                app:layout_constraintBottom_toBottomOf="@id/textView_purchase_complete_shipping_method"
+                app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_order_number_value"
+                app:layout_constraintTop_toTopOf="@id/textView_purchase_complete_shipping_method" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider_purchase_complete2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="39dp"
+                app:dividerColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_shipping_method" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_purchase_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/wide_box_bottom_active"
+        android:text="홈으로"
+        android:textAppearance="@style/body_regular_16"
+        android:textColor="@color/jagi_hint_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollview_purchase_complete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

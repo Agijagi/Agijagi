@@ -26,6 +26,11 @@
         <item name="fontFamily">@font/nanum_square_round_otf_r</item>
     </style>
 
+    <style name="body_regular_13">
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/nanum_square_round_otf_r</item>
+    </style>
+
     <style name="body_regular_14">
         <item name="android:textSize">14sp</item>
         <item name="fontFamily">@font/nanum_square_round_otf_r</item>
@@ -46,8 +51,18 @@
         <item name="fontFamily">@font/nanum_square_round_otf_b</item>
     </style>
 
+    <style name="body_bold_13">
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/nanum_square_round_otf_b</item>
+    </style>
+
     <style name="body_bold_14">
         <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/nanum_square_round_otf_b</item>
+    </style>
+
+    <style name="body_bold_18">
+        <item name="android:textSize">18sp</item>
         <item name="fontFamily">@font/nanum_square_round_otf_b</item>
     </style>
 
