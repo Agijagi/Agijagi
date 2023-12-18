@@ -31,6 +31,11 @@
         <item name="fontFamily">@font/nanum_square_round_otf_r</item>
     </style>
 
+    <style name="body_regular_15">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/nanum_square_round_otf_r</item>
+    </style>
+
     <style name="body_regular_16">
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/nanum_square_round_otf_r</item>
