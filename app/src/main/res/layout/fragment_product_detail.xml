@@ -73,15 +73,68 @@
                 app:layout_constraintStart_toStartOf="@id/textview_productdetail_name"
                 app:layout_constraintTop_toBottomOf="@id/textview_productdetail_name" />
 
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_product_detail_custom_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_productdetail_price"
+                app:strokeColor="@color/jagi_brown"
+                tools:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="13dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_product_detail_custom_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/custom_information"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textview_product_detail_custom_information_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="주문 제작 상품"
+                        android:textAppearance="@style/body_bold_13"
+                        app:layout_constraintStart_toEndOf="@id/imageview_product_detail_custom_information"
+                        app:layout_constraintTop_toTopOf="@id/imageview_product_detail_custom_information" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="이 상품은 구매자의 요청에 따라 개별 주문 제작되며 판매자에 의해 취소/반품/교환이 제한될 수 있습니다."
+                        android:textAppearance="@style/body_regular_12"
+                        app:layout_constraintBottom_toBottomOf="@id/imageview_product_detail_custom_information"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/textview_product_detail_custom_information_title"
+                        app:layout_constraintTop_toBottomOf="@id/textview_product_detail_custom_information_title" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/divider_productdetail"
                 android:layout_width="0dp"
                 android:layout_height="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 app:dividerColor="#E4E3E2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textview_productdetail_price" />
+                app:layout_constraintTop_toBottomOf="@id/cardview_product_detail_custom_information" />
 
             <TextView
                 android:id="@+id/textview_productdetail_info_title"
@@ -168,17 +221,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:layout_marginBottom="80dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/product_detail_default_image"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageview_productdetail_image5" />
 
+            <include
+                android:id="@+id/textview_product_detail_floor_plan"
+                layout="@layout/layout_custom_download_floor_plan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textAppearance="@style/title_bold_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageview_productdetail_image6" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <include
+        android:id="@+id/include_product_detail_inquiry_floating_button"
+        layout="@layout/custom_floating_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
 
     <ImageButton
         android:id="@+id/image_button_product_detail_favorite"
