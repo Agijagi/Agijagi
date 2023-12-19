@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.product.CustomOptionFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_custom_option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back_24px"
+        app:title="주문" />
+
+    <ScrollView
+        android:id="@+id/scrollview_custom_option"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/imagebutton_custom_option_shopping_bag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_custom_option">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_custom_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/jagi_brown">
+
+                <ImageView
+                    android:id="@+id/imageview_custom_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_item_logo" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textview_custom_option_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="29dp"
+                android:text="브랜드명"
+                android:textAppearance="@style/body_regular_10"
+                android:textColor="@color/brand_name"
+                app:layout_constraintStart_toEndOf="@id/cardview_custom_option"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_custom_option_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="제품명 도자기"
+                android:textAppearance="@style/body_regular_12"
+                app:layout_constraintStart_toEndOf="@id/cardview_custom_option"
+                app:layout_constraintTop_toBottomOf="@id/textview_custom_option_brand" />
+
+            <TextView
+                android:id="@+id/textview_custom_option_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="100,000원"
+                android:textAppearance="@style/body_regular_11"
+                app:layout_constraintStart_toEndOf="@id/cardview_custom_option"
+                app:layout_constraintTop_toBottomOf="@id/textview_custom_option_name" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider_custom_option"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="16dp"
+                app:dividerColor="@color/jagi_divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview_custom_option" />
+
+            <TextView
+                android:id="@+id/textview_custom_option_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="옵션 선택"
+                android:textAppearance="@style/title_bold_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider_custom_option" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputlayout_custom_option_select"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_custom_option_select">
+
+                <AutoCompleteTextView
+                    android:id="@+id/textview_custom_option_select_example"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="커스텀 선택"
+                    android:inputType="none"
+                    android:textAppearance="@style/body_regular_14"
+                    app:simpleItems="@array/custom_option_select" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <include
+                android:id="@+id/include_custom_option_lettering"
+                layout="@layout/layout_custom_option_lettering"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textinputlayout_custom_option_select"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textview_custom_option_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="위치 선택"
+                android:textAppearance="@style/title_bold_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/include_custom_option_lettering" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputlayout_custom_option_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="1"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_custom_option_position">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_input_custom_option_location_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ex) 왼쪽 위 + 오른쪽 위 + 오른쪽 아래"
+                    android:textAppearance="@style/body_regular_14" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textview_custom_option_various_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="다양한 위치에다가 하고싶으면 1:1 문의로 보내주세요"
+                android:textAppearance="@style/body_regular_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textinputlayout_custom_option_position" />
+
+            <include
+                android:id="@+id/include_custom_option_painting"
+                layout="@layout/layout_custom_option_painting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_custom_option_various_position"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textview_custom_option_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="수량"
+                android:textAppearance="@style/title_bold_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/include_custom_option_painting" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputlayout_custom_option_volume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="56dp"
+                app:hintEnabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_custom_option_volume">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textinputedittext_custom_option_volume_example"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="수량을 입력해주세요"
+                    android:inputType="number"
+                    android:textAppearance="@style/body_regular_14" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imagebutton_custom_option_shopping_bag"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shopping_bag_24px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollview_custom_option" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_custom_option_purchase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/wide_box_rounded_purchase_button_solid"
+        android:text="구매하기"
+        android:textAppearance="@style/body_regular_16"
+        android:textColor="@color/jagi_hint_color"
+        app:layout_constraintBottom_toBottomOf="@id/imagebutton_custom_option_shopping_bag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imagebutton_custom_option_shopping_bag"
+        app:layout_constraintTop_toTopOf="@id/imagebutton_custom_option_shopping_bag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

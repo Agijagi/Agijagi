@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintDimensionRatio="1:1">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/jagi_white"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/jagi_black_70"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:id="@+id/imageview_custom_option_painting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/custom_option_painting_defalut_image"
+            android:scaleType="centerCrop" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textview_custom_option_painting_position"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:textColor="@color/jagi_black_42"
+        android:textAppearance="@style/title_bold_16"
+        android:layout_height="wrap_content"
+        android:text="정면" />
+
+    <ImageView
+        android:id="@+id/button_cancel"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="4dp"
+        android:backgroundTint="@color/jagi_ivory"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/cancel_agijagi2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

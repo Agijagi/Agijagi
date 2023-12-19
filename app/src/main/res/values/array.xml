@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="custom_option_select">
+        <item>레터링</item>
+        <item>이미지</item>
+    </array>
+</resources>
