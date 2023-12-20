@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="@color/jagi_ivory">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="배송상태"
+            android:textAppearance="@style/body_regular_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview_order_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_order_state"
+            app:strokeColor="@color/jagi_brown">
+
+            <ImageView
+                android:id="@+id/imageView_order_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_item_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_order_state" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textView_order_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="브랜드명"
+            android:textAppearance="@style/body_regular_10"
+            app:layout_constraintStart_toEndOf="@+id/cardview_order_product"
+            app:layout_constraintTop_toTopOf="@+id/cardview_order_product" />
+
+        <TextView
+            android:id="@+id/textView_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="제품명 도자기"
+            android:textAppearance="@style/body_regular_14"
+            app:layout_constraintStart_toEndOf="@+id/cardview_order_product"
+            app:layout_constraintTop_toBottomOf="@+id/textView_order_brand" />
+
+        <TextView
+            android:id="@+id/textView_order_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:text="색상 : Blue | 1개"
+            android:textAppearance="@style/body_regular_9"
+            app:layout_constraintStart_toEndOf="@+id/cardview_order_product"
+            app:layout_constraintTop_toBottomOf="@+id/textView_order_name" />
+
+        <TextView
+            android:id="@+id/textView_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="100,000원"
+            android:textAppearance="@style/body_regular_11"
+            app:layout_constraintStart_toEndOf="@+id/cardview_order_product"
+            app:layout_constraintTop_toBottomOf="@+id/textView_order_option" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_order_exchange"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/narrow_box_rounded_button_stroke"
+            android:text="교환/반품 신청"
+            android:textAppearance="@style/body_regular_12"
+            android:textColor="@color/jagi_brown"
+            app:layout_constraintEnd_toStartOf="@id/button_order_shipping_tracking"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_order_product" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_order_shipping_tracking"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/narrow_box_rounded_button_solid"
+            android:text="배송조회"
+            android:textAppearance="@style/body_regular_12"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_order_exchange"
+            app:layout_constraintTop_toTopOf="@id/button_order_exchange" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonOrderChat"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/narrow_box_rounded_button_stroke"
+            android:drawableStart="@drawable/order_chat_bubble_20px"
+            android:paddingStart="10dp"
+            android:paddingEnd="6dp"
+            android:text="1:1 채팅"
+            android:textAppearance="@style/body_regular_12"
+            android:textColor="@color/jagi_brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
