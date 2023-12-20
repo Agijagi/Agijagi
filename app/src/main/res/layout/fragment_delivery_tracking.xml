@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.ordershipping.DeliveryTrackingFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_delivery_tracking"
+        style="@style/Toolbar.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back_24px"
+        app:title="배송조회" />
+
+    <TextView
+        android:id="@+id/textView_delivery_tracking_arrival_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="00/00(수) 상품 도착 예정"
+        android:textAppearance="@style/body_regular_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_delivery_tracking" />
+
+    <ImageView
+        android:id="@+id/imageView_delivery_tracking_delivery_ready"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/order_delivery_ready_selector"
+        app:layout_constraintEnd_toStartOf="@id/imageView_delivery_tracking_delivery_shipping"
+        app:layout_constraintStart_toStartOf="@id/textView_delivery_tracking_arrival_information"
+        app:layout_constraintTop_toBottomOf="@+id/textView_delivery_tracking_arrival_information" />
+
+    <TextView
+        android:id="@+id/textView_delivery_tracking_delivery_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="배송 대기"
+        android:textAppearance="@style/body_regular_12"
+        app:layout_constraintEnd_toEndOf="@id/imageView_delivery_tracking_delivery_ready"
+        app:layout_constraintStart_toStartOf="@id/imageView_delivery_tracking_delivery_ready"
+        app:layout_constraintTop_toBottomOf="@id/imageView_delivery_tracking_delivery_ready" />
+
+    <ImageView
+        android:id="@+id/imageView_delivery_tracking_delivery_shipping"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="32dp"
+        android:src="@drawable/order_delivery_selector"
+        app:layout_constraintBottom_toBottomOf="@id/imageView_delivery_tracking_delivery_ready"
+        app:layout_constraintEnd_toStartOf="@id/imageView_delivery_tracking_delivery_complete"
+        app:layout_constraintStart_toEndOf="@id/imageView_delivery_tracking_delivery_ready"
+        app:layout_constraintTop_toTopOf="@id/imageView_delivery_tracking_delivery_ready" />
+
+    <TextView
+        android:id="@+id/textView_delivery_tracking_delivery_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="배송 중"
+        android:textAppearance="@style/body_regular_12"
+        app:layout_constraintEnd_toEndOf="@id/imageView_delivery_tracking_delivery_shipping"
+        app:layout_constraintStart_toStartOf="@id/imageView_delivery_tracking_delivery_shipping"
+        app:layout_constraintTop_toBottomOf="@id/imageView_delivery_tracking_delivery_shipping" />
+
+    <ImageView
+        android:id="@+id/imageView_delivery_tracking_delivery_complete"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/order_delivery_complete_selector"
+        app:layout_constraintEnd_toEndOf="@id/textView_delivery_tracking_arrival_information"
+        app:layout_constraintStart_toEndOf="@id/imageView_delivery_tracking_delivery_shipping"
+        app:layout_constraintTop_toBottomOf="@id/textView_delivery_tracking_arrival_information" />
+
+    <TextView
+        android:id="@+id/textView_delivery_tracking_delivery_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="배송 완료"
+        android:textAppearance="@style/body_regular_12"
+        app:layout_constraintEnd_toEndOf="@id/imageView_delivery_tracking_delivery_complete"
+        app:layout_constraintStart_toStartOf="@id/imageView_delivery_tracking_delivery_complete"
+        app:layout_constraintTop_toBottomOf="@id/imageView_delivery_tracking_delivery_complete" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider_delivery_tracking"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="24dp"
+        app:dividerColor="@color/jagi_divider"
+        app:layout_constraintTop_toBottomOf="@id/textView_delivery_tracking_delivery_ready" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView_delivery_tracking_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/jagi_ivory"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_delivery_tracking"
+        app:strokeColor="@color/jagi_brown"
+        app:strokeWidth="1dp">
+
+        <ImageView
+            android:id="@+id/imageView_delivery_tracking_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/no_item_logo" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textView_delivery_tracking_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="상품명"
+        android:textAppearance="@style/body_regular_14"
+        app:layout_constraintStart_toEndOf="@id/cardView_delivery_tracking_product"
+        app:layout_constraintTop_toTopOf="@id/cardView_delivery_tracking_product" />
+
+    <TextView
+        android:id="@+id/textView_delivery_tracking_product_waybill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="운송장번호 0000000000000000000"
+        android:textAppearance="@style/body_regular_12"
+        app:layout_constraintStart_toStartOf="@id/textView_delivery_tracking_product_name"
+        app:layout_constraintTop_toBottomOf="@id/textView_delivery_tracking_product_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_delivery_tracking_courier"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/narrow_box_rounded_button_solid"
+        android:drawableStart="@drawable/order_call_20px"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="택배 회사"
+        android:textAppearance="@style/body_regular_12"
+        android:textColor="@color/jagi_hint_color"
+        app:layout_constraintEnd_toStartOf="@id/button_delivery_tracking_shipping_driver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView_delivery_tracking_product" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_delivery_tracking_shipping_driver"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/narrow_box_rounded_button_solid"
+        android:drawableStart="@drawable/order_call_20px"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="배송 기사"
+        android:textAppearance="@style/body_regular_12"
+        android:textColor="@color/jagi_hint_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_delivery_tracking_courier"
+        app:layout_constraintTop_toTopOf="@id/button_delivery_tracking_courier" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
