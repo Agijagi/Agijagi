@@ -60,4 +60,14 @@
         android:name="com.likelion.agijagi.feature.shipping.ShippingAddUpdateFragment"
         android:label="fragment_shipping_add_update"
         tools:layout="@layout/fragment_shipping_add_update" />
+    <fragment
+        android:id="@+id/chattingFragment"
+        android:name="com.likelion.agijagi.feature.chatting.ChattingFragment"
+        android:label="fragment_chatting"
+        tools:layout="@layout/fragment_chatting" />
+    <fragment
+        android:id="@+id/chattingRoomFragment"
+        android:name="com.likelion.agijagi.feature.chatting.ChattingRoomFragment"
+        android:label="fragment_chatting_room"
+        tools:layout="@layout/fragment_chatting_room" />
 </navigation>
