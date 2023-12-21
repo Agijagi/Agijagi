@@ -50,4 +50,14 @@
         android:name="com.likelion.agijagi.feature.notification.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/shippingFragment"
+        android:name="com.likelion.agijagi.feature.shipping.ShippingFragment"
+        android:label="fragment_shipping"
+        tools:layout="@layout/fragment_shipping" />
+    <fragment
+        android:id="@+id/shippingAddUpdateFragment"
+        android:name="com.likelion.agijagi.feature.shipping.ShippingAddUpdateFragment"
+        android:label="fragment_shipping_add_update"
+        tools:layout="@layout/fragment_shipping_add_update" />
 </navigation>

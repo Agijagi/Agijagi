@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_shipping_basic"
+            style="@style/CustomCheckBoxSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_shipping_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배송지명"
+            android:textAppearance="@style/body_regular_15"
+            app:layout_constraintBottom_toBottomOf="@id/checkbox_shipping_basic"
+            app:layout_constraintStart_toEndOf="@id/checkbox_shipping_basic"
+            app:layout_constraintTop_toTopOf="@id/checkbox_shipping_basic" />
+
+        <TextView
+            android:id="@+id/textview_shipping_basic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="기본배송지"
+            android:textAppearance="@style/body_regular_10"
+            android:textColor="@color/jagi_carrot"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/checkbox_shipping_basic"
+            app:layout_constraintStart_toEndOf="@id/textview_shipping_title"
+            app:layout_constraintTop_toTopOf="@id/checkbox_shipping_basic" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_shipping_update"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/narrow_box_rounded_button_solid"
+            android:text="수정"
+            android:textAppearance="@style/body_regular_12"
+            android:textColor="@color/jagi_hint_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_shipping_delete"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/narrow_box_rounded_button_stroke"
+            android:text="삭제"
+            android:textColor="@color/jagi_brown"
+            app:layout_constraintEnd_toStartOf="@id/button_shipping_update"
+            app:layout_constraintTop_toTopOf="@id/button_shipping_update" />
+
+        <TextView
+            android:id="@+id/textview_shipping_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="010-1010-1024"
+            android:textAppearance="@style/body_regular_14"
+            app:layout_constraintStart_toStartOf="@id/textview_shipping_title"
+            app:layout_constraintTop_toBottomOf="@id/textview_shipping_title" />
+
+        <TextView
+            android:id="@+id/textview_shipping_address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="배송지 주소11111111111111111111111"
+            android:textAppearance="@style/body_regular_14"
+            app:layout_constraintStart_toStartOf="@id/textview_shipping_phone"
+            app:layout_constraintTop_toBottomOf="@id/textview_shipping_phone" />
+
+        <TextView
+            android:id="@+id/textview_shipping_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="배송지 상세주소22222222222222222"
+            android:textAppearance="@style/body_regular_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textview_shipping_address1"
+            app:layout_constraintTop_toBottomOf="@id/textview_shipping_address1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
