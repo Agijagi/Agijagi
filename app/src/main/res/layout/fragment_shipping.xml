@@ -17,6 +17,18 @@
         app:title="배송지 관리" />
 
     <TextView
+        android:id="@+id/textview_shipping_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록된 배송지가 없습니다."
+        android:textAppearance="@style/body_regular_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textview_shipping_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,6 +60,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_shipping_list"
-        tools:listitem="@layout/item_shipping"/>
+        tools:listitem="@layout/item_shipping" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
