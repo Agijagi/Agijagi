@@ -70,4 +70,9 @@
         android:name="com.likelion.agijagi.feature.chatting.ChattingRoomFragment"
         android:label="fragment_chatting_room"
         tools:layout="@layout/fragment_chatting_room" />
+    <fragment
+        android:id="@+id/myPageFragment"
+        android:name="com.likelion.agijagi.feature.mypage.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
 </navigation>
