@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     R.id.categoryFragment,
                     R.id.orderFragment,
                     R.id.wishFragment,
-                    R.id.buyerMypageFragment -> {
+                    R.id.myPageFragment -> {
                         View.VISIBLE
                     }
 
