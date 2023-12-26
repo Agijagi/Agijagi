@@ -9,7 +9,7 @@
     android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/textview_recent_search"
+        android:id="@+id/textview_search_recent_searches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="최근검색어"
@@ -20,12 +20,12 @@
         android:layout_marginStart="8dp" />
 
     <ImageButton
-        android:id="@+id/image_button_delete"
+        android:id="@+id/imagebutton_search_recent_searches_delete"
         android:layout_width="24dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/textview_recent_search"
-        app:layout_constraintTop_toTopOf="@id/textview_recent_search"
-        app:layout_constraintBottom_toBottomOf="@id/textview_recent_search"
+        app:layout_constraintStart_toEndOf="@id/textview_search_recent_searches"
+        app:layout_constraintTop_toTopOf="@id/textview_search_recent_searches"
+        app:layout_constraintBottom_toBottomOf="@id/textview_search_recent_searches"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="4dp"
         android:backgroundTint="@color/transparency"
