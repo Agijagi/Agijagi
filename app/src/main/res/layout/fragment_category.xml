@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_shopping_bag"
-        app:title="카테고리" />
+        app:title="@string/category_toolbar_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_category"

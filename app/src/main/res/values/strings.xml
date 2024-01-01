@@ -102,4 +102,14 @@
     <string name="shipping_address1">배송지 주소11111111111111111111111</string>
     <string name="shipping_address2">배송지 상세주소22222222222222222</string>
 
+    <!-- CategoryFragment -->
+    <string name="category_toolbar_title">카테고리</string>
+
+    <!-- item category -->
+    <string name="category_all">All</string>
+    <string name="category_plate">Plate</string>
+    <string name="category_cup">Cup</string>
+    <string name="category_bowl">Bowl</string>
+    <string name="category_order_made">Order made</string>
+
 </resources>
