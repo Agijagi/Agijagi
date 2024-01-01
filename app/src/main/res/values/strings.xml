@@ -121,4 +121,13 @@
     <string name="home_product_name">제품명</string>
     <string name="home_price">000000원</string>
 
+    <!-- MyPageFragment -->
+    <string name="my_page_toolbar_title">내 정보</string>
+    <string name="my_page_greeting">000님 안녕하세요!</string>
+    <string name="my_page_email">E-mail</string>
+    <string name="my_page_profile_management">프로필 관리</string>
+    <string name="my_page_shipping_management">배송지 관리</string>
+    <string name="my_page_notification_setting">알림 설정</string>
+    <string name="my_page_logout">로그아웃</string>
+    <string name="my_page_quit">회원탈퇴</string>
 </resources>
