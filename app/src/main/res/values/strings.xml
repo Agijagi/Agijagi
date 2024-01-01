@@ -139,5 +139,10 @@
     <string name="notification_title">알림 제목</string>
     <string name="notification_body">알림 내용</string>
     <string name="notification_date">M월 d일</string>
-    
+
+    <!-- item product list -->
+    <string name="product_list_brand">브랜드명</string>
+    <string name="product_list_product_name">제품명 도자기</string>
+    <string name="product_list_price">100000원</string>
+
 </resources>
