@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="주문" />
+        app:title="@string/custom_option_toolbar_title" />
 
     <ScrollView
         android:id="@+id/scrollview_custom_option"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="29dp"
-                android:text="브랜드명"
+                android:text="@string/custom_option_brand"
                 android:textAppearance="@style/body_regular_10"
                 android:textColor="@color/brand_name"
                 app:layout_constraintStart_toEndOf="@id/cardview_custom_option"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
-                android:text="제품명 도자기"
+                android:text="@string/custom_option_product_name"
                 android:textAppearance="@style/body_regular_12"
                 app:layout_constraintStart_toEndOf="@id/cardview_custom_option"
                 app:layout_constraintTop_toBottomOf="@id/textview_custom_option_brand" />
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="4dp"
-                android:text="100,000원"
+                android:text="@string/custom_option_price"
                 android:textAppearance="@style/body_regular_11"
                 app:layout_constraintStart_toEndOf="@id/cardview_custom_option"
                 app:layout_constraintTop_toBottomOf="@id/textview_custom_option_name" />
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="옵션 선택"
+                android:text="@string/custom_option_select"
                 android:textAppearance="@style/title_bold_16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider_custom_option" />
@@ -119,7 +119,7 @@
                     android:id="@+id/textview_custom_option_select_example"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="커스텀 선택"
+                    android:hint="@string/custom_option_select_example"
                     android:inputType="none"
                     android:textAppearance="@style/body_regular_14"
                     app:simpleItems="@array/custom_option_select" />
@@ -143,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="위치 선택"
+                android:text="@string/custom_option_position"
                 android:textAppearance="@style/title_bold_16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/include_custom_option_lettering" />
@@ -164,7 +164,7 @@
                     android:id="@+id/edit_input_custom_option_location_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="ex) 왼쪽 위 + 오른쪽 위 + 오른쪽 아래"
+                    android:hint="@string/custom_option_location_hint"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
-                android:text="다양한 위치에다가 하고싶으면 1:1 문의로 보내주세요"
+                android:text="@string/custom_option_various_position"
                 android:textAppearance="@style/body_regular_12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textinputlayout_custom_option_position" />
@@ -197,7 +197,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="수량"
+                android:text="@string/custom_option_volume"
                 android:textAppearance="@style/title_bold_16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/include_custom_option_painting" />
@@ -219,7 +219,7 @@
                     android:id="@+id/textinputedittext_custom_option_volume_example"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="수량을 입력해주세요"
+                    android:hint="@string/custom_option_volume_example"
                     android:inputType="number"
                     android:textAppearance="@style/body_regular_14" />
 
@@ -250,7 +250,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/wide_box_rounded_purchase_button_solid"
-        android:text="구매하기"
+        android:text="@string/custom_option_purchase"
         android:textAppearance="@style/body_regular_16"
         android:textColor="@color/jagi_hint_color"
         app:layout_constraintBottom_toBottomOf="@id/imagebutton_custom_option_shopping_bag"

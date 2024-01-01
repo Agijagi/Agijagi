@@ -102,4 +102,72 @@
     <string name="shipping_address1">배송지 주소11111111111111111111111</string>
     <string name="shipping_address2">배송지 상세주소22222222222222222</string>
 
+    <!-- CategoryFragment -->
+    <string name="category_toolbar_title">카테고리</string>
+
+    <!-- item category -->
+    <string name="category_all">All</string>
+    <string name="category_plate">Plate</string>
+    <string name="category_cup">Cup</string>
+    <string name="category_bowl">Bowl</string>
+    <string name="category_order_made">Order made</string>
+
+    <!-- HomeFragment -->
+    <string name="home_view_custom_products">주문 제작 상품 보기</string>
+    <string name="home_best_items">BEST ITEMS</string>
+
+    <!-- item home -->
+    <string name="home_brand">브랜드명</string>
+    <string name="home_product_name">제품명</string>
+    <string name="home_price">000000원</string>
+
+    <!-- MyPageFragment -->
+    <string name="my_page_toolbar_title">내 정보</string>
+    <string name="my_page_greeting">000님 안녕하세요!</string>
+    <string name="my_page_email">E-mail</string>
+    <string name="my_page_profile_management">프로필 관리</string>
+    <string name="my_page_shipping_management">배송지 관리</string>
+    <string name="my_page_notification_setting">알림 설정</string>
+    <string name="my_page_logout">로그아웃</string>
+    <string name="my_page_quit">회원탈퇴</string>
+
+    <!-- NotificationFragment -->
+    <string name="notification_toolbar_title">알림</string>
+    <string name="notification_empty_msg">알림이 없습니다</string>
+
+    <!-- item notification -->
+    <string name="notification_title">알림 제목</string>
+    <string name="notification_body">알림 내용</string>
+    <string name="notification_date">M월 d일</string>
+
+    <!-- item product list -->
+    <string name="product_list_brand">브랜드명</string>
+    <string name="product_list_product_name">제품명 도자기</string>
+    <string name="product_list_price">100000원</string>
+
+    <!-- CustomOptionFragment -->
+    <string name="custom_option_toolbar_title">주문</string>
+    <string name="custom_option_brand">브랜드명</string>
+    <string name="custom_option_product_name">제품명 도자기</string>
+    <string name="custom_option_price">100,000원</string>
+    <string name="custom_option_select">옵션 선택</string>
+    <string name="custom_option_select_example">커스텀 선택</string>
+    <string name="custom_option_position">위치 선택</string>
+    <string name="custom_option_location_hint">ex) 왼쪽 위 + 오른쪽 위 + 오른쪽 아래</string>
+    <string name="custom_option_various_position">다양한 위치에다가 하고싶으면 1:1 문의로 보내주세요</string>
+    <string name="custom_option_volume">수량</string>
+    <string name="custom_option_volume_example">수량을 입력해주세요</string>
+    <string name="custom_option_purchase">구매하기</string>
+
+    <!-- SearchFragment -->
+    <string name="search_toolbar_title">검색</string>
+    <string name="search_hint">검색어를 입력하세요</string>
+    <string name="search_recent_searches">최근 검색어</string>
+
+    <!-- item recent searches -->
+    <string name="recent_searches_delete_button">최근 검색어 삭제 아이콘</string>
+
+    <!-- item related searches -->
+    <string name="related_searches_result">연관 검색어</string>
+
 </resources>

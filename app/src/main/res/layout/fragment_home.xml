@@ -53,7 +53,7 @@
                 android:background="@drawable/ordermade_box_rounded"
                 android:drawableEnd="@drawable/arrow_forward_ios_24px"
                 android:paddingHorizontal="8dp"
-                android:text="주문 제작 상품 보기"
+                android:text="@string/home_view_custom_products"
                 android:textAppearance="@style/body_regular_14"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="@id/imageview_home_thumbnail"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="16dp"
-                android:text="BEST ITEMS"
+                android:text="@string/home_best_items"
                 android:textAppearance="@style/title_bold_20"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageview_home_thumbnail" />
