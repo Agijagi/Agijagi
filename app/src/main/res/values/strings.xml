@@ -130,4 +130,14 @@
     <string name="my_page_notification_setting">알림 설정</string>
     <string name="my_page_logout">로그아웃</string>
     <string name="my_page_quit">회원탈퇴</string>
+
+    <!-- NotificationFragment -->
+    <string name="notification_toolbar_title">알림</string>
+    <string name="notification_empty_msg">알림이 없습니다</string>
+
+    <!-- item notification -->
+    <string name="notification_title">알림 제목</string>
+    <string name="notification_body">알림 내용</string>
+    <string name="notification_date">M월 d일</string>
+    
 </resources>
