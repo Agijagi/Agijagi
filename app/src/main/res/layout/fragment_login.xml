@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="로그인" />
+        app:title="@string/login_toolbar_title" />
 
     <ScrollView
         android:id="@+id/scrollview"
@@ -51,7 +51,7 @@
                 android:layout_marginTop="128dp"
                 android:backgroundTint="@color/google_login"
                 android:paddingHorizontal="24dp"
-                android:text="구글로그인으로 시작"
+                android:text="@string/login_button_google"
                 android:textAppearance="@style/title_bold_16"
                 android:textColor="@color/black"
                 app:cornerRadius="12dp"
@@ -69,7 +69,7 @@
                 android:backgroundTint="@color/naver_login"
                 android:paddingHorizontal="24dp"
                 android:layout_marginTop="4dp"
-                android:text="네이버로그인으로 시작"
+                android:text="@string/login_button_naver"
                 android:textAppearance="@style/title_bold_16"
                 android:textColor="@color/white"
                 android:paddingVertical="16dp"
@@ -87,7 +87,7 @@
                 android:backgroundTint="@color/kakao_login"
                 android:paddingHorizontal="24dp"
                 android:layout_marginTop="4dp"
-                android:text="카카오로그인으로 시작"
+                android:text="@string/login_button_kakao"
                 android:textAppearance="@style/title_bold_16"
                 android:textColor="@color/black"
                 android:paddingVertical="16dp"

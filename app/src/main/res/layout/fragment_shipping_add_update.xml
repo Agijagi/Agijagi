@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="배송지 @@" />
+        app:title="@string/shippingaddupdate_toolbar_title" />
 
     <ScrollView
         android:id="@+id/scrollview_shipping_add_update"
@@ -45,7 +45,7 @@
                     android:id="@+id/textinputedittext_shipping_add_update_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="배송지명"
+                    android:hint="@string/shippingaddupdate_title_hint"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -65,7 +65,7 @@
                     android:id="@+id/textinputedittext_shipping_add_update_address1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="배송지 주소"
+                    android:hint="@string/shippingaddupdate_address1_hint"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -85,7 +85,7 @@
                     android:id="@+id/textinputedittext_shipping_add_update_address2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="배송지 상세주소"
+                    android:hint="@string/shippingaddupdate_address2_hint"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -105,7 +105,7 @@
                     android:id="@+id/textinputedittext_shipping_add_update_recipient"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="수령인"
+                    android:hint="@string/shippingaddupdate_recipient_hint"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -125,7 +125,7 @@
                     android:id="@+id/textinputedittext_shipping_add_update_recipient_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="수령인 연락처"
+                    android:hint="@string/shippingaddupdate_recipient_phone_hint"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -146,7 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:text="기본배송지로 등록하기"
+                android:text="@string/shippingaddupdate_basic_option"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintBottom_toBottomOf="@id/checkbox_shipping_add_update_basic"
                 app:layout_constraintStart_toEndOf="@id/checkbox_shipping_add_update_basic"
@@ -161,7 +161,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/wide_box_bottom_active"
-        android:text="등록"
+        android:text="@string/shippingaddupdate_button_register"
         android:textAppearance="@style/body_regular_16"
         android:textColor="@color/jagi_hint_color"
         app:layout_constraintBottom_toBottomOf="parent"
