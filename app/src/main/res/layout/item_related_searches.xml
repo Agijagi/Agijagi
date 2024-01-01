@@ -21,7 +21,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="TextView"
+        android:text="@string/related_searches_result"
         android:textAppearance="@style/body_regular_16"
         app:layout_constraintBottom_toBottomOf="@id/imageview_related_searches_icon"
         app:layout_constraintEnd_toEndOf="parent"
