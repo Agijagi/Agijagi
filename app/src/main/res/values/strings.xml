@@ -145,4 +145,18 @@
     <string name="product_list_product_name">제품명 도자기</string>
     <string name="product_list_price">100000원</string>
 
+    <!-- CustomOptionFragment -->
+    <string name="custom_option_toolbar_title">주문</string>
+    <string name="custom_option_brand">브랜드명</string>
+    <string name="custom_option_product_name">제품명 도자기</string>
+    <string name="custom_option_price">100,000원</string>
+    <string name="custom_option_select">옵션 선택</string>
+    <string name="custom_option_select_example">커스텀 선택</string>
+    <string name="custom_option_position">위치 선택</string>
+    <string name="custom_option_location_hint">ex) 왼쪽 위 + 오른쪽 위 + 오른쪽 아래</string>
+    <string name="custom_option_various_position">다양한 위치에다가 하고싶으면 1:1 문의로 보내주세요</string>
+    <string name="custom_option_volume">수량</string>
+    <string name="custom_option_volume_example">수량을 입력해주세요</string>
+    <string name="custom_option_purchase">구매하기</string>
+
 </resources>
