@@ -14,13 +14,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="배송지 관리" />
+        app:title="@string/shipping_toolbar_title" />
 
     <TextView
         android:id="@+id/textview_shipping_blank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="등록된 배송지가 없습니다."
+        android:text="@string/shipping_blank_message"
         android:textAppearance="@style/body_regular_16"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="배송지 목록"
+        android:text="@string/shipping_list_title"
         android:textAppearance="@style/body_regular_16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_shipping" />
@@ -45,7 +45,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/narrow_box_rounded_button_solid"
-        android:text="배송지 등록"
+        android:text="@string/shipping_button_add"
         android:textAppearance="@style/body_regular_12"
         android:textColor="@color/jagi_hint_color"
         app:layout_constraintEnd_toEndOf="parent"

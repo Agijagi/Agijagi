@@ -13,7 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="주문완료" />
+        app:title="@string/purchasecomplete_toolbar_title" />
 
     <ScrollView
         android:id="@+id/scrollview_purchase_complete"
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
-                android:text="주문이 완료되었습니다."
+                android:text="@string/purchasecomplete_confirmation"
                 android:textAppearance="@style/body_bold_18"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="48dp"
-                android:text="주문번호"
+                android:text="@string/purchasecomplete_order_number"
                 android:textAppearance="@style/body_bold_13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider_purchase_complete1" />
@@ -68,7 +68,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="40dp"
-                android:text="000000000000000000000000000"
+                android:text="@string/purchasecomplete_order_number_value"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintBottom_toBottomOf="@id/textView_purchase_complete_order_number"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="32dp"
-                android:text="수령인"
+                android:text="@string/purchasecomplete_customer"
                 android:textAppearance="@style/body_bold_13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_order_number" />
@@ -90,7 +90,7 @@
                 android:id="@+id/textView_purchase_complete_customer_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="홍길동"
+                android:text="@string/purchasecomplete_customer_name"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_order_number_value"
                 app:layout_constraintTop_toTopOf="@id/textView_purchase_complete_customer" />
@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="010 1111 2222"
+                android:text="@string/purchasecomplete_customer_phone"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_order_number_value"
                 app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_customer_name" />
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="56dp"
-                android:text="배송지"
+                android:text="@string/purchasecomplete_shipping_address"
                 android:textAppearance="@style/body_bold_13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_customer" />
@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="52dp"
                 android:layout_marginEnd="40dp"
-                android:text="경기도 고양시 일산동구 어쩌구 저쩌구"
+                android:text="@string/purchasecomplete_shipping_address_value"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/textView_purchase_complete_shipping_address"
@@ -133,7 +133,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="경기도 고양시 일산동구 어쩌구 저쩌구"
+                android:text="@string/purchasecomplete_shipping_address_value"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintEnd_toEndOf="@id/textView_purchase_complete_shipping_address_value"
                 app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_shipping_address_value"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="56dp"
-                android:text="배송방법"
+                android:text="@string/purchasecomplete_shipping_method"
                 android:textAppearance="@style/body_bold_13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_shipping_address" />
@@ -154,7 +154,7 @@
                 android:id="@+id/textView_purchase_complete_shipping_method_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="택배"
+                android:text="@string/purchasecomplete_shipping_method_value"
                 android:textAppearance="@style/body_regular_13"
                 app:layout_constraintBottom_toBottomOf="@id/textView_purchase_complete_shipping_method"
                 app:layout_constraintStart_toStartOf="@id/textView_purchase_complete_order_number_value"
@@ -181,7 +181,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@drawable/wide_box_bottom_active"
-        android:text="홈으로"
+        android:text="@string/purchasecomplete_button_home"
         android:textAppearance="@style/body_regular_16"
         android:textColor="@color/jagi_hint_color"
         app:layout_constraintBottom_toBottomOf="parent"
