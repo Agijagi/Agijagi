@@ -175,5 +175,12 @@
     <string name="order_no_order_item">주문한 상품이 없습니다</string>
 
     <!-- NotificationSettingFragment -->
+    <string name="notification_setting_toolbar_title">알림 설정</string>
+    <string name="notification_setting_item_order_and_shipping">주문/배송</string>
+    <string name="notification_setting_item_order_and_shipping_detail">주문, 배송, 반품, 교환, 취소</string>
+    <string name="notification_setting_order">제작</string>
+    <string name="notification_setting_order_detail">제작 진행 현황</string>
+    <string name="notification_setting_customer_service">고객센터</string>
+    <string name="notification_setting_customer_service_detail">문의 내역 확인</string>
 
 </resources>
