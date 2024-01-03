@@ -183,4 +183,15 @@
     <string name="notification_setting_customer_service">고객센터</string>
     <string name="notification_setting_customer_service_detail">문의 내역 확인</string>
 
+    <!-- DeliveryTrackingFragment -->
+    <string name="delivery_tracking_toolbar_title">배송 조회</string>
+    <string name="delivery_tracking_arrival_information">00/00(수) 상품 도착 예정</string>
+    <string name="delivery_tracking_ready">배송 대기</string>
+    <string name="delivery_tracking_shipping">배송 중</string>
+    <string name="delivery_tracking_complete">배송 완료</string>
+    <string name="delivery_tracking_product_name">상품명</string>
+    <string name="delivery_tracking_product_waybill">운송장번호 0000000000000000000</string>
+    <string name="delivery_tracking_courier">택배 회사</string>
+    <string name="delivery_tracking_shipping_driver">배송 기사</string>
+
 </resources>
