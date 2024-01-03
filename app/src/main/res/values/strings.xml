@@ -170,4 +170,10 @@
     <!-- item related searches -->
     <string name="related_searches_result">연관 검색어</string>
 
+    <!-- OrderFragment -->
+    <string name="order_toolbar_title">주문/배송 조회</string>
+    <string name="order_no_order_item">주문한 상품이 없습니다</string>
+
+    <!-- NotificationSettingFragment -->
+
 </resources>
