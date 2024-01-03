@@ -207,9 +207,17 @@
     <string name="shopping_basket_all_price_text">최종결제금액</string>
     <string name="shopping_basket_all_price">159000원</string>
     <string name="shopping_basket_ok_button_text">주문하기</string>
-    
+
     <!-- WishFragment-->
     <string name="wish_toolbar_title">찜</string>
     <string name="wish_empty_list">위시 리스트가 비어있습니다</string>
+    <string name="order_state">배송상태</string>
+    <string name="order_brand_name">브랜드명</string>
+    <string name="order_product_name">제품명 도자기</string>
+    <string name="order_option">색상 : Blue | 1개</string>
+    <string name="order_price">100,000원</string>
+    <string name="order_exchange">교환/반품 신청</string>
+    <string name="order_shipping_tracking">배송조회</string>
+    <string name="order_chat_button">1:1 채팅</string>
 
 </resources>
