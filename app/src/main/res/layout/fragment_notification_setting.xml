@@ -7,14 +7,14 @@
     tools:context=".feature.notification.NotificationSettingFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar_seller_notification_setting"
+        android:id="@+id/toolbar_notification_setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="알림 설정" />
+        app:title="@string/notification_setting_toolbar_title" />
 
     <TextView
         android:id="@+id/textview_notification_item_order_and_shipping"
@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="주문/배송"
+        android:text="@string/notification_setting_item_order_and_shipping"
         android:textAppearance="@style/body_bold_16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_seller_notification_setting" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar_notification_setting" />
 
     <TextView
         android:id="@+id/textview_notification_item_order_and_shipping_detail"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:text="주문, 배송, 반품, 교환, 취소"
+        android:text="@string/notification_setting_item_order_and_shipping_detail"
         android:textAppearance="@style/body_regular_15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_notification_item_order_and_shipping" />
@@ -49,7 +49,7 @@
         android:background="@null"
         android:checked="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_seller_notification_setting"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_notification_setting"
         app:thumbTint="@color/switch_toggle_color"
         app:trackTint="@color/switch_toggle_track_color" />
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="제작"
+        android:text="@string/notification_setting_order"
         android:textAppearance="@style/body_bold_16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider1" />
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:text="제작 진행 현황"
+        android:text="@string/notification_setting_order_detail"
         android:textAppearance="@style/body_regular_15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_order" />
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="고객센터"
+        android:text="@string/notification_setting_customer_service"
         android:textAppearance="@style/body_bold_16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider2" />
@@ -128,7 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:text="문의 내역 확인"
+        android:text="@string/notification_setting_customer_service_detail"
         android:textAppearance="@style/body_regular_15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_customer_service" />

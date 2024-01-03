@@ -170,4 +170,63 @@
     <!-- item related searches -->
     <string name="related_searches_result">연관 검색어</string>
 
+    <!-- OrderFragment -->
+    <string name="order_toolbar_title">주문/배송 조회</string>
+    <string name="order_no_order_item">주문한 상품이 없습니다</string>
+
+    <!-- NotificationSettingFragment -->
+    <string name="notification_setting_toolbar_title">알림 설정</string>
+    <string name="notification_setting_item_order_and_shipping">주문/배송</string>
+    <string name="notification_setting_item_order_and_shipping_detail">주문, 배송, 반품, 교환, 취소</string>
+    <string name="notification_setting_order">제작</string>
+    <string name="notification_setting_order_detail">제작 진행 현황</string>
+    <string name="notification_setting_customer_service">고객센터</string>
+    <string name="notification_setting_customer_service_detail">문의 내역 확인</string>
+
+    <!-- DeliveryTrackingFragment -->
+    <string name="delivery_tracking_toolbar_title">배송 조회</string>
+    <string name="delivery_tracking_arrival_information">00/00(수) 상품 도착 예정</string>
+    <string name="delivery_tracking_ready">배송 대기</string>
+    <string name="delivery_tracking_shipping">배송 중</string>
+    <string name="delivery_tracking_complete">배송 완료</string>
+    <string name="delivery_tracking_product_name">상품명</string>
+    <string name="delivery_tracking_product_waybill">운송장번호 0000000000000000000</string>
+    <string name="delivery_tracking_courier">택배 회사</string>
+    <string name="delivery_tracking_shipping_driver">배송 기사</string>
+
+    <!-- ShoppingBasketFragment  -->
+    <string name="shopping_basket_toolbar_title">장바구니</string>
+    <string name="shopping_basket_all_select">전체 선택</string>
+    <string name="shopping_basket_delete_selected">선택 삭제</string>
+    <string name="shopping_basket_empty_basket_text">장바구니가 비어있습니다.</string>
+    <string name="shopping_basket_puchase_text">결제금액</string>
+    <string name="shopping_basket_order_text">주문금액</string>
+    <string name="shopping_basket_order_price">150000원</string>
+    <string name="shopping_basket_shipping_price_text">배송비</string>
+    <string name="shopping_basket_shipping_price">9000원</string>
+    <string name="shopping_basket_all_price_text">최종결제금액</string>
+    <string name="shopping_basket_all_price">159000원</string>
+    <string name="shopping_basket_ok_button_text">주문하기</string>
+
+    <!-- WishFragment-->
+    <string name="wish_toolbar_title">찜</string>
+    <string name="wish_empty_list">위시 리스트가 비어있습니다</string>
+
+    <!-- ItemOrderFragment-->
+    <string name="order_state">배송상태</string>
+    <string name="order_brand_name">브랜드명</string>
+    <string name="order_product_name">제품명 도자기</string>
+    <string name="order_option">색상 : Blue | 1개</string>
+    <string name="order_price">100,000원</string>
+    <string name="order_exchange">교환/반품 신청</string>
+    <string name="order_shipping_tracking">배송조회</string>
+    <string name="order_chat_button">1:1 채팅</string>
+
+    <!-- ItemShoppingBasketFragment-->
+    <string name="shopping_basket_brand_name">브랜드명</string>
+    <string name="shopping_basket_product_name">제품명 도자기</string>
+    <string name="shopping_basket_price">100,000원</string>
+    <string name="shopping_basket_change_option">옵션변경</string>
+    <string name="shopping_basket_button_count">123123</string>
+
 </resources>

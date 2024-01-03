@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="장바구니" />
+        app:title="@string/shopping_basket_toolbar_title" />
 
     <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox_shopping_basket"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:padding="4dp"
-        android:text="전체 선택"
+        android:text="@string/shopping_basket_all_select"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_shopping_basket" />
@@ -35,7 +35,7 @@
         android:layout_marginEnd="16dp"
         android:paddingHorizontal="4dp"
         android:paddingVertical="16dp"
-        android:text="선택 삭제"
+        android:text="@string/shopping_basket_delete_selected"
         android:textAppearance="@style/body_bold_14"
         app:layout_constraintBottom_toTopOf="@id/recyclerview_shopping_basket"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="장바구니가 비어있습니다."
+            android:text="@string/shopping_basket_empty_basket_text"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:text="결제금액"
+        android:text="@string/shopping_basket_puchase_text"
         android:textAppearance="@style/body_regular_16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@id/textview_order"
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="주문금액"
+        android:text="@string/shopping_basket_order_text"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintBottom_toTopOf="@id/textview_shipping_price_text"
         app:layout_constraintStart_toStartOf="parent" />
@@ -141,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-        android:text="150000원"
+        android:text="@string/shopping_basket_order_price"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintBottom_toTopOf="@id/textview_shipping_price"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="배송비"
+        android:text="@string/shopping_basket_shipping_price_text"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintBottom_toTopOf="@id/divider_shopping_basket"
         app:layout_constraintStart_toStartOf="parent" />
@@ -163,7 +163,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="9000원"
+        android:text="@string/shopping_basket_shipping_price"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintBottom_toTopOf="@id/divider_shopping_basket"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -186,7 +186,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
-        android:text="최종결제금액"
+        android:text="@string/shopping_basket_all_price_text"
         android:textAppearance="@style/body_bold_14"
         app:layout_constraintBottom_toTopOf="@id/button_shopping_basket_ok"
         app:layout_constraintStart_toStartOf="parent" />
@@ -197,7 +197,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
-        android:text="159000원"
+        android:text="@string/shopping_basket_all_price"
         android:textAppearance="@style/body_bold_14"
         app:layout_constraintBottom_toTopOf="@id/button_shopping_basket_ok"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -209,7 +209,7 @@
         android:background="@drawable/wide_box_bottom_inactive"
         android:clickable="false"
         android:padding="8dp"
-        android:text="주문하기"
+        android:text="@string/shopping_basket_ok_button_text"
         android:textAppearance="@style/body_regular_16"
         android:textColor="@color/jagi_ivory"
         app:layout_constraintBottom_toBottomOf="parent"
