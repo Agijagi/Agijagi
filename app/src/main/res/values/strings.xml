@@ -219,5 +219,10 @@
     <string name="order_exchange">교환/반품 신청</string>
     <string name="order_shipping_tracking">배송조회</string>
     <string name="order_chat_button">1:1 채팅</string>
+    <string name="shopping_basket_brand_name">브랜드명</string>
+    <string name="shopping_basket_product_name">제품명 도자기</string>
+    <string name="shopping_basket_price">100,000원</string>
+    <string name="shopping_basket_change_option">옵션변경</string>
+    <string name="shopping_basket_button_count">123123</string>
 
 </resources>
