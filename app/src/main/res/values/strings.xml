@@ -207,5 +207,9 @@
     <string name="shopping_basket_all_price_text">최종결제금액</string>
     <string name="shopping_basket_all_price">159000원</string>
     <string name="shopping_basket_ok_button_text">주문하기</string>
+    
+    <!-- WishFragment-->
+    <string name="wish_toolbar_title">찜</string>
+    <string name="wish_empty_list">위시 리스트가 비어있습니다</string>
 
 </resources>

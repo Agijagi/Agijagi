@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_shopping_bag"
-        app:title="찜" />
+        app:title="@string/wish_toolbar_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_wish_list"
@@ -103,7 +103,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="위시 리스트가 비어있습니다"
+            android:text="@string/wish_empty_list"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
