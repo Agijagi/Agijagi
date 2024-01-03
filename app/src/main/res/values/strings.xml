@@ -194,4 +194,18 @@
     <string name="delivery_tracking_courier">택배 회사</string>
     <string name="delivery_tracking_shipping_driver">배송 기사</string>
 
+    <!-- ShoppingBasketFragment  -->
+    <string name="shopping_basket_toolbar_title">장바구니</string>
+    <string name="shopping_basket_all_select">전체 선택</string>
+    <string name="shopping_basket_delete_selected">선택 삭제</string>
+    <string name="shopping_basket_empty_basket_text">장바구니가 비어있습니다.</string>
+    <string name="shopping_basket_puchase_text">결제금액</string>
+    <string name="shopping_basket_order_text">주문금액</string>
+    <string name="shopping_basket_order_price">150000원</string>
+    <string name="shopping_basket_shipping_price_text">배송비</string>
+    <string name="shopping_basket_shipping_price">9000원</string>
+    <string name="shopping_basket_all_price_text">최종결제금액</string>
+    <string name="shopping_basket_all_price">159000원</string>
+    <string name="shopping_basket_ok_button_text">주문하기</string>
+
 </resources>
