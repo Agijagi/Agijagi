@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="28dp"
-            android:text="@string/shopping_basket_brand_name"
+            android:text="@string/all_brand"
             android:textAppearance="@style/body_regular_10"
             app:layout_constraintStart_toEndOf="@+id/imageview_shopping_list_item_card"
             app:layout_constraintTop_toTopOf="parent" />
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="4dp"
-            android:text="@string/shopping_basket_product_name"
+            android:text="@string/all_product_name"
             android:textAppearance="@style/body_regular_12"
             app:layout_constraintStart_toEndOf="@+id/imageview_shopping_list_item_card"
             app:layout_constraintTop_toBottomOf="@id/textview_shopping_list_item_brand" />
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="4dp"
-            android:text="@string/shopping_basket_price"
+            android:text="@string/all_price"
             android:textAppearance="@style/body_regular_11"
             app:layout_constraintStart_toEndOf="@+id/imageview_shopping_list_item_card"
             app:layout_constraintTop_toBottomOf="@id/textview_shopping_list_item_name" />

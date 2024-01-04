@@ -21,7 +21,7 @@
         android:id="@+id/textview_chattingroommychat_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/chattingroommychat_date"
+        android:text="@string/all_time"
         android:textAppearance="@style/body_regular_11"
         android:textColor="@color/jagi_gray_message"
         app:layout_constraintBottom_toBottomOf="@id/textview_chattingroommychat_content"

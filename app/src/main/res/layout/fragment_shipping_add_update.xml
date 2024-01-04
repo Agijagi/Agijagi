@@ -105,7 +105,7 @@
                     android:id="@+id/textinputedittext_shipping_add_update_recipient"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/shippingaddupdate_recipient_hint"
+                    android:hint="@string/all_customer"
                     android:textAppearance="@style/body_regular_14" />
 
             </com.google.android.material.textfield.TextInputLayout>

@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="@string/readymadeoption_toolbar_title" />
+        app:title="@string/all_order" />
 
     <ScrollView
         android:id="@+id/scrollview_ready_made_option"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="29dp"
-                android:text="@string/readymadeoption_item_brand"
+                android:text="@string/all_brand"
                 android:textAppearance="@style/body_regular_10"
                 android:textColor="@color/brand_name"
                 app:layout_constraintStart_toEndOf="@id/cardview_ready_made_option_item_image"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
-                android:text="@string/readymadeoption_item_name"
+                android:text="@string/all_product_name"
                 android:textAppearance="@style/body_regular_12"
                 app:layout_constraintStart_toEndOf="@id/cardview_ready_made_option_item_image"
                 app:layout_constraintTop_toBottomOf="@id/textview_ready_made_option_item_brand" />
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="4dp"
-                android:text="@string/readymadeoption_item_price"
+                android:text="@string/all_price"
                 android:textAppearance="@style/body_regular_11"
                 app:layout_constraintStart_toEndOf="@id/cardview_ready_made_option_item_image"
                 app:layout_constraintTop_toBottomOf="@id/textview_ready_made_option_item_name" />
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="@string/readymadeoption_volume_text"
+                android:text="@string/all_volume"
                 android:textAppearance="@style/body_regular_16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider_ready_made_option" />
@@ -116,7 +116,7 @@
                     android:id="@+id/textinputedittext_ready_made_option_volume"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/readymadeoption_volume_hint"
+                    android:text="@string/all_volume"
                     android:textColorHint="@color/jagi_white_30" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -146,7 +146,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/wide_box_rounded_purchase_button_solid"
-        android:text="@string/readymadeoption_button_purchase"
+        android:text="@string/all_purchase"
         android:textAppearance="@style/body_regular_16"
         android:textColor="@color/jagi_hint_color"
         app:layout_constraintEnd_toEndOf="parent"

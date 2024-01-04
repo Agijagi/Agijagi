@@ -6,14 +6,14 @@
         android:id="@+id/menu_home_search"
         android:enabled="true"
         android:icon="@drawable/search_24px"
-        android:title="검색창"
+        android:title="@string/menu_search"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/menu_home_shopping_list"
         android:enabled="true"
         android:icon="@drawable/shopping_bag_24px"
-        android:title="장바구니"
+        android:title="@string/menu_shopping_list"
         app:showAsAction="ifRoom" />
 
 </menu>

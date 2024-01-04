@@ -1,8 +1,28 @@
 <resources>
     <string name="app_name">Agijagi</string>
 
+    <!-- All -->
+    <string name="all_chatting">채팅</string>
+    <string name="all_brand">브랜드명</string>
+    <string name="all_product_name">제품명 도자기</string>
+    <string name="all_purchase">구매하기</string>
+    <string name="all_order">주문</string>
+    <string name="all_price">100,000원</string>
+    <string name="all_volume">수량 선택</string>
+    <string name="all_shipping_address">배송지</string>
+    <string name="all_amount">결제금액</string>
+    <string name="all_total_amount">최종결제금액</string>
+    <string name="all_shipping_fee">배송비</string>
+    <string name="all_customer">수령인</string>
+    <string name="all_shipping_management">배송지 관리</string>
+    <string name="all_date">M월 d일</string>
+    <string name="all_time">오전 00:00</string>
+    <string name="all_notification_setting">알림 설정</string>
+    <string name="all_order_amount">주문금액</string>
+    <string name="all_delete">삭제</string>
+    <string name="all_cancel">취소</string>
+
     <!-- ChattingFragment -->
-    <string name="chatting_toolbar_title">채팅</string>
     <string name="chatting_empty_message">채팅 기록이 없습니다.</string>
 
     <!-- LoginFragment -->
@@ -12,29 +32,18 @@
     <string name="login_button_kakao">카카오로그인으로 시작</string>
 
     <!-- ProductDetailFragment -->
-    <string name="productdetail_brand_name">브랜드명</string>
-    <string name="productdetail_product_name">제품명 도자기</string>
     <string name="productdetail_price">150,000원</string>
     <string name="productdetail_custom_information_title">주문 제작 상품</string>
     <string name="productdetail_custom_information_description">이 상품은 구매자의 요청에 따라 개별 주문 제작되며 판매자에 의해 취소/반품/교환이 제한될 수 있습니다.</string>
     <string name="productdetail_info_title">제품명 도자기 …</string>
     <string name="productdetail_info_description">기본적인 블랙 색상의 깔끔한 디자인과 다양한 디자인으로 쓰임이 많은 도자기 그릇입니다. 도자기 재질로 무게감이 있어 안정적으로..</string>
-    <string name="productdetail_button_purchase">구매하기</string>
-
-    <!-- ReadyMadeOptionFragment -->
-    <string name="readymadeoption_toolbar_title">주문</string>
-    <string name="readymadeoption_item_brand">브랜드명</string>
-    <string name="readymadeoption_item_name">제품명 도자기</string>
-    <string name="readymadeoption_item_price">100,000원</string>
-    <string name="readymadeoption_volume_text">수량 선택</string>
-    <string name="readymadeoption_volume_hint">수량 선택</string>
-    <string name="readymadeoption_button_purchase">구매하기</string>
+    <string name="productdetail_custom_floor_plan">도면</string>
+    <string name="productdetail_custom_download">다운로드</string>
+    <string name="productdetail_custom_info">파일을 저장해 편집(인스타그램 스토리, 마크업, 스노우 등)해 주셔도 되며, 종이에 그린 것을 찍어 첨부해 주셔도 됩니다.</string>
 
     <!-- PaymentFragment -->
     <string name="payment_toolbar_title">결제</string>
-    <string name="payment_delivery_title">배송지</string>
     <string name="payment_category_title">결제방식</string>
-    <string name="payment_amount_title">결제금액</string>
     <string name="payment_shipping_name">배송지명</string>
     <string name="payment_shipping_change">변경</string>
     <string name="payment_shipping_phone">010–1234–5678</string>
@@ -46,12 +55,9 @@
     <string name="payment_category_bank">계좌이체</string>
     <string name="payment_category_hint">카드사를 선택해주세요</string>
     <string name="payment_category_detail_hint">할부기간</string>
-    <string name="payment_amount_text">주문금액</string>
     <string name="payment_amount_value">150,000원</string>
     <string name="payment_shipping_fee_value">90,000원</string>
     <string name="payment_total_mount_value">159,000원</string>
-    <string name="payment_shipping_fee_title">배송비</string>
-    <string name="payment_total_amount_title">최종결제금액</string>
     <string name="payment_button_purchase">결제하기</string>
 
     <!-- PurchaseCompleteFragment -->
@@ -59,17 +65,14 @@
     <string name="purchasecomplete_confirmation">주문이 완료되었습니다.</string>
     <string name="purchasecomplete_order_number">주문번호</string>
     <string name="purchasecomplete_order_number_value">000000000000000000000000000</string>
-    <string name="purchasecomplete_customer">수령인</string>
     <string name="purchasecomplete_customer_name">홍길동</string>
     <string name="purchasecomplete_customer_phone">010 1111 2222</string>
-    <string name="purchasecomplete_shipping_address">배송지</string>
     <string name="purchasecomplete_shipping_address_value">경기도 고양시 일산동구 어쩌구 저쩌구</string>
     <string name="purchasecomplete_shipping_method">배송방법</string>
     <string name="purchasecomplete_shipping_method_value">택배</string>
     <string name="purchasecomplete_button_home">홈으로</string>
 
     <!-- ShippingFragment -->
-    <string name="shipping_toolbar_title">배송지 관리</string>
     <string name="shipping_blank_message">등록된 배송지가 없습니다.</string>
     <string name="shipping_list_title">배송지 목록</string>
     <string name="shipping_button_add">배송지 등록</string>
@@ -79,25 +82,19 @@
     <string name="shippingaddupdate_title_hint">배송지명</string>
     <string name="shippingaddupdate_address1_hint">배송지 주소</string>
     <string name="shippingaddupdate_address2_hint">배송지 상세주소</string>
-    <string name="shippingaddupdate_recipient_hint">수령인</string>
     <string name="shippingaddupdate_recipient_phone_hint">수령인 연락처</string>
     <string name="shippingaddupdate_basic_option">기본배송지로 등록하기</string>
     <string name="shippingaddupdate_button_register">등록</string>
 
     <!-- item chatting -->
-    <string name="chatting_title">채팅</string>
     <string name="chatting_content">내용</string>
-    <string name="chatting_date">M월 d일</string>
     <string name="chattingroommychat_is_read">1</string>
-    <string name="chattingroommychat_date">오전 00:00</string>
     <string name="chattingroomotherchat_writer">보낸 이</string>
-    <string name="chattingroomotherchat_date">오전 00:00</string>
 
     <!-- item shipping -->
     <string name="shipping_title">배송지명</string>
     <string name="shipping_basic">기본배송지</string>
     <string name="shipping_button_update">수정</string>
-    <string name="shipping_button_delete">삭제</string>
     <string name="shipping_phone">010-1010-1024</string>
     <string name="shipping_address1">배송지 주소11111111111111111111111</string>
     <string name="shipping_address2">배송지 상세주소22222222222222222</string>
@@ -117,7 +114,6 @@
     <string name="home_best_items">BEST ITEMS</string>
 
     <!-- item home -->
-    <string name="home_brand">브랜드명</string>
     <string name="home_product_name">제품명</string>
     <string name="home_price">000000원</string>
 
@@ -126,8 +122,6 @@
     <string name="my_page_greeting">000님 안녕하세요!</string>
     <string name="my_page_email">E-mail</string>
     <string name="my_page_profile_management">프로필 관리</string>
-    <string name="my_page_shipping_management">배송지 관리</string>
-    <string name="my_page_notification_setting">알림 설정</string>
     <string name="my_page_logout">로그아웃</string>
     <string name="my_page_quit">회원탈퇴</string>
 
@@ -138,18 +132,10 @@
     <!-- item notification -->
     <string name="notification_title">알림 제목</string>
     <string name="notification_body">알림 내용</string>
-    <string name="notification_date">M월 d일</string>
 
     <!-- item product list -->
-    <string name="product_list_brand">브랜드명</string>
-    <string name="product_list_product_name">제품명 도자기</string>
-    <string name="product_list_price">100000원</string>
 
     <!-- CustomOptionFragment -->
-    <string name="custom_option_toolbar_title">주문</string>
-    <string name="custom_option_brand">브랜드명</string>
-    <string name="custom_option_product_name">제품명 도자기</string>
-    <string name="custom_option_price">100,000원</string>
     <string name="custom_option_select">옵션 선택</string>
     <string name="custom_option_select_example">커스텀 선택</string>
     <string name="custom_option_position">위치 선택</string>
@@ -157,7 +143,9 @@
     <string name="custom_option_various_position">다양한 위치에다가 하고싶으면 1:1 문의로 보내주세요</string>
     <string name="custom_option_volume">수량</string>
     <string name="custom_option_volume_example">수량을 입력해주세요</string>
-    <string name="custom_option_purchase">구매하기</string>
+    <string name="custom_option_lettering">원하시는 색상과 문구를 자유롭게 적어주세요</string>
+    <string name="custom_option_example">ex) 멋쟁이(초록) + 사자(주황) + 부트(검정)</string>
+    <string name="custom_option_painting">사진 첨부</string>
 
     <!-- SearchFragment -->
     <string name="search_toolbar_title">검색</string>
@@ -175,7 +163,6 @@
     <string name="order_no_order_item">주문한 상품이 없습니다</string>
 
     <!-- NotificationSettingFragment -->
-    <string name="notification_setting_toolbar_title">알림 설정</string>
     <string name="notification_setting_item_order_and_shipping">주문/배송</string>
     <string name="notification_setting_item_order_and_shipping_detail">주문, 배송, 반품, 교환, 취소</string>
     <string name="notification_setting_order">제작</string>
@@ -199,12 +186,8 @@
     <string name="shopping_basket_all_select">전체 선택</string>
     <string name="shopping_basket_delete_selected">선택 삭제</string>
     <string name="shopping_basket_empty_basket_text">장바구니가 비어있습니다.</string>
-    <string name="shopping_basket_puchase_text">결제금액</string>
-    <string name="shopping_basket_order_text">주문금액</string>
     <string name="shopping_basket_order_price">150000원</string>
-    <string name="shopping_basket_shipping_price_text">배송비</string>
     <string name="shopping_basket_shipping_price">9000원</string>
-    <string name="shopping_basket_all_price_text">최종결제금액</string>
     <string name="shopping_basket_all_price">159000원</string>
     <string name="shopping_basket_ok_button_text">주문하기</string>
 
@@ -214,19 +197,33 @@
 
     <!-- ItemOrderFragment-->
     <string name="order_state">배송상태</string>
-    <string name="order_brand_name">브랜드명</string>
-    <string name="order_product_name">제품명 도자기</string>
     <string name="order_option">색상 : Blue | 1개</string>
-    <string name="order_price">100,000원</string>
     <string name="order_exchange">교환/반품 신청</string>
     <string name="order_shipping_tracking">배송조회</string>
     <string name="order_chat_button">1:1 채팅</string>
 
     <!-- ItemShoppingBasketFragment-->
-    <string name="shopping_basket_brand_name">브랜드명</string>
-    <string name="shopping_basket_product_name">제품명 도자기</string>
-    <string name="shopping_basket_price">100,000원</string>
     <string name="shopping_basket_change_option">옵션변경</string>
     <string name="shopping_basket_button_count">123123</string>
+
+    <!-- Category -->
+    <string name="category_title">Category</string>
+
+    <!-- Custom Option -->
+    <string name="customoption_position">정면</string>
+
+    <!-- navigation -->
+    <string name="navigation_home">홈</string>
+    <string name="navigation_category">카테고리</string>
+    <string name="navigation_order">주문/배송</string>
+    <string name="navigation_wish">찜</string>
+    <string name="navigation_mypage">내 정보</string>
+
+    <!-- menu -->
+    <string name="menu_delete">삭제</string>
+    <string name="menu_search">검색창</string>
+    <string name="menu_shopping_list">장바구니</string>
+    <string name="menu_chatting">채팅</string>
+    <string name="menu_notification">알림</string>
 
 </resources>

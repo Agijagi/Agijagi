@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="@string/notification_setting_toolbar_title" />
+        app:title="@string/all_notification_setting" />
 
     <TextView
         android:id="@+id/textview_notification_item_order_and_shipping"

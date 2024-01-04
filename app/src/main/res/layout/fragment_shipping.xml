@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="@string/shipping_toolbar_title" />
+        app:title="@string/all_order" />
 
     <TextView
         android:id="@+id/textview_shipping_blank"

@@ -5,19 +5,19 @@
     <item
         android:id="@+id/menu_my_page_chat"
         android:icon="@drawable/chat_24px"
-        android:title="채팅"
+        android:title="@string/menu_chatting"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/menu_my_page_notify"
         android:icon="@drawable/notifications_24px"
-        android:title="알림"
+        android:title="@string/menu_notification"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/menu_my_page_shopping_bag"
         android:icon="@drawable/shopping_bag_24px"
-        android:title="장바구니"
+        android:title="@string/menu_shopping_list"
         app:showAsAction="always" />
 
 </menu>

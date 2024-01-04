@@ -40,7 +40,7 @@
         android:textColor="@color/jagi_black_42"
         android:textAppearance="@style/title_bold_16"
         android:layout_height="wrap_content"
-        android:text="정면" />
+        android:text="@string/customoption_position" />
 
     <ImageView
         android:id="@+id/button_cancel"
