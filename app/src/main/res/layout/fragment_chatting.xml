@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_chatting"
         app:navigationIcon="@drawable/arrow_back_24px"
-        app:title="@string/chatting_toolbar_title" />
+        app:title="@string/all_chatting" />
 
     <TextView
         android:id="@+id/textview_chatting_empty_msg"

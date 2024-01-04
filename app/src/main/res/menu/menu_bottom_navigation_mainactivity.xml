@@ -6,31 +6,31 @@
         android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/home_24px"
-        android:title="홈" />
+        android:title="@string/navigation_home" />
 
     <item
         android:id="@+id/categoryFragment"
         android:enabled="true"
         android:icon="@drawable/menu_24px"
-        android:title="카테고리" />
+        android:title="@string/navigation_category" />
 
     <item
         android:id="@+id/orderFragment"
         android:enabled="true"
         android:icon="@drawable/local_shipping_24px"
-        android:title="주문/배송" />
+        android:title="@string/navigation_order" />
 
     <item
         android:id="@+id/wishFragment"
         android:enabled="true"
         android:icon="@drawable/favorite_24px"
-        android:title="찜" />
+        android:title="@string/navigation_wish" />
 
     <item
         android:id="@+id/buyerMypageFragment"
         android:enabled="true"
         android:icon="@drawable/person_24px"
-        android:title="내 정보"
+        android:title="@string/navigation_mypage"
         app:showAsAction="always" />
 
 </menu>

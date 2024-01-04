@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/shopping_basket_puchase_text"
+        android:text="@string/all_amount"
         android:textAppearance="@style/body_regular_16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@id/textview_order"
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/shopping_basket_order_text"
+        android:text="@string/all_order_amount"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintBottom_toTopOf="@id/textview_shipping_price_text"
         app:layout_constraintStart_toStartOf="parent" />
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/shopping_basket_shipping_price_text"
+        android:text="@string/all_shipping_fee"
         android:textAppearance="@style/body_regular_14"
         app:layout_constraintBottom_toTopOf="@id/divider_shopping_basket"
         app:layout_constraintStart_toStartOf="parent" />
@@ -186,7 +186,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
-        android:text="@string/shopping_basket_all_price_text"
+        android:text="@string/all_total_amount"
         android:textAppearance="@style/body_bold_14"
         app:layout_constraintBottom_toTopOf="@id/button_shopping_basket_ok"
         app:layout_constraintStart_toStartOf="parent" />

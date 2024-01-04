@@ -12,7 +12,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="원하시는 색상과 문구를 자유롭게 적어주세요"
+        android:text="@string/custom_option_lettering"
         android:textSize="16sp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/body_regular_14"
-            android:hint="ex) 멋쟁이(초록) + 사자(주황) + 부트(검정)" />
+            android:hint="@string/custom_option_example" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

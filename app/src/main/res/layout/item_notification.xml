@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:maxLines="1"
-        android:text="@string/notification_date"
+        android:text="@string/all_date"
         app:layout_constraintBottom_toBottomOf="@id/textview_notification_body"
         app:layout_constraintEnd_toEndOf="@id/imageview_notification_new"
         app:layout_constraintTop_toTopOf="@id/textview_notification_body" />

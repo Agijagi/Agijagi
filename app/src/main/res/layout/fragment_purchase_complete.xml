@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="32dp"
-                android:text="@string/purchasecomplete_customer"
+                android:text="@string/all_customer"
                 android:textAppearance="@style/body_bold_13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_order_number" />
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="56dp"
-                android:text="@string/purchasecomplete_shipping_address"
+                android:text="@string/all_shipping_address"
                 android:textAppearance="@style/body_bold_13"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_purchase_complete_customer" />

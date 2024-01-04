@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/home_brand"
+        android:text="@string/all_brand"
         android:textAppearance="@style/body_regular_10"
         android:textColor="@color/brand_name"
         app:layout_constraintStart_toStartOf="parent"
